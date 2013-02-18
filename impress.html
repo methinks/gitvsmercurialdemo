@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<div id="impress" data-transition-duration="600">
+<div id="impress" data-transition-duration="700">
 	<div id="start" class="step" data-x="-2320" data-y="-1785" data-scale="0.15">
 	</div>
 	
@@ -38,7 +38,7 @@
     </div>
 
     <div class="step slide" data-x="0" data-y="-1500">
-        <q><i>"Git's CLI sucks!"</i> say Mercurial's power users!
+        <q><i>"Git's CLI sucks!"</i> say Mercurial's power users.
 		<ul>
 			<li>hard to learn</li>
 			<li>harder to master</li>
@@ -63,17 +63,18 @@
 			<li>* still kinda hard to master**</li>
 		</ul>
 	</div>
-	<div class="step" data-x="-383" data-y="-490" data-scale="0.02">
+	<div class="step" data-x="-330" data-y="-300" data-z="500" data-scale="0.15" data-rotate-x="-30">
 		<ul>
 			<li>** ok, very hard to become a true ninja</li>
 		</ul>
 	</div>
-	<div class="step" data-x="-360" data-y="-490" data-scale="0.02">
+
+	<div class="step" data-x="-330" data-y="-500" data-z="500" data-scale="0.15" data-rotate-x="-30">
 		<p>Though free Scott Chacon's book (<a href="http://git-scm.com/book">available for free online</a>) is the only thing you need to really learn most of the Git power features. And it is not that long - a free weekend is all that separates you from becoming a Git poweruser.</p>
 	</div>
 	
 	<div class="step slide" data-x="1000" data-y="-1500">
-        <q><i>"Mercurial doesn't give you the power!"</i> say Git's power users!
+        <q><i>"Mercurial doesn't give you the power!"</i> say Git's power users.
 		<ul>
 			<li>history is (too) sacred</li>
 			<li>no index</li>
@@ -100,6 +101,26 @@
 			<li>* not out of the box? what about support?</li>
 			<li>* finding a plugin to match your needs is an extra effort</li>
 		</ul>
+	</div>
+	
+	<div class="step slide" data-x="1000" data-y="0">
+		<q>Git <strong>does</strong> have its vices.</q>
+	</div>
+	
+	<div class="step">
+		<p><a href="http://osdir.com/ml/version-control.git/2005-06/msg00792.html">Linus thinks</a> it's cool:</p>
+		<code>
+			git fetch <project-to-union-merge>
+			GIT_INDEX_FILE=.git/tmp-index git-read-tree FETCH_HEAD
+			GIT_INDEX_FILE=.git/tmp-index git-checkout-cache -a -u
+			git-update-cache --add -- (GIT_INDEX_FILE=.git/tmp-index git-ls-files)
+			cp .git/FETCH_HEAD .git/MERGE_HEAD
+			git commit
+		</code>
+	</div>
+	
+	<div class="step wtf"  data-x="-1510" data-y="-140" data-rotate="90" data-scale="3.2">
+		<img src="wtf.jpeg" width="520px" height="*"/>
 	</div>
 	
 	<div id="overview" class="step" data-scale="6">

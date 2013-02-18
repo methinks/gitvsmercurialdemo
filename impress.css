@@ -49,6 +49,13 @@ q:before, q:after {
     content: none;
 }
 
+code {
+	display: block;
+	border: 1px solid #999;
+	background-color: #eee;
+	font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -158,6 +165,15 @@ a:focus {
 
 .slide q strong {
     white-space: nowrap;
+}
+
+.wtf {
+	padding-top: 80px;
+	border-radius: 6px;
+	border: 2px solid #666;
+	width: 600px;
+	height: 600px;
+	background-color: #fff;
 }
 
 #overview { display: none }
