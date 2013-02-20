@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<div id="impress" data-transition-duration="700">
+<div id="impress" data-transition-duration="800">
 	<div id="start" class="step" data-x="-2320" data-y="-1785" data-scale="0.15">
 	</div>
 	
@@ -107,20 +107,80 @@
 		<q>Git <strong>does</strong> have its vices.</q>
 	</div>
 	
-	<div class="step">
-		<p><a href="http://osdir.com/ml/version-control.git/2005-06/msg00792.html">Linus thinks</a> it's cool:</p>
-		<code>
-			git fetch <project-to-union-merge>
-			GIT_INDEX_FILE=.git/tmp-index git-read-tree FETCH_HEAD
-			GIT_INDEX_FILE=.git/tmp-index git-checkout-cache -a -u
-			git-update-cache --add -- (GIT_INDEX_FILE=.git/tmp-index git-ls-files)
-			cp .git/FETCH_HEAD .git/MERGE_HEAD
-			git commit
-		</code>
+	<div class="step wideslide data-x="-100" data-y="0">
+		<p><a href="http://osdir.com/ml/version-control.git/2005-06/msg00792.html">Coolest merge ever</a> (according to Linus):</p>
+<pre><code>
+git fetch <project-to-union-merge>
+GIT_INDEX_FILE=.git/tmp-index git-read-tree FETCH_HEAD
+GIT_INDEX_FILE=.git/tmp-index git-checkout-cache -a -u
+git-update-cache --add -- (GIT_INDEX_FILE=.git/tmp-index git-ls-files)
+cp .git/FETCH_HEAD .git/MERGE_HEAD
+git commit
+</code></pre>
+		<p>This would merge an unrelated repo into current one</p>
 	</div>
 	
 	<div class="step wtf"  data-x="-1510" data-y="-140" data-rotate="90" data-scale="3.2">
 		<img src="wtf.jpeg" width="520px" height="*"/>
+	</div>
+	
+	<div class="step slide" data-x="-3250" data-y="290" data-scale="1.5" data-rotate="180">
+		<q><strong>git pull &lt;other repo url&gt;</strong> is all you need right now.</q>
+		<q>The post was from 2005 - very early days</q>
+	</div>
+	
+	<div id="svngitmercurial" class="step" data-x="-3300" data-y="-500" data-scale="1.5" data-rotate="180">
+		<p>SVN / Git / Mercurial</p>
+	</div>
+	
+	<div class="step slide" data-x="-3250" data-y="-1325" data-scale="1.5" data-rotate="180">
+		<q>SVN, apart from being centralized, has a couple important characteristics:
+		<ul>
+			<li>stores changesets in deltas</li>
+			<li>poor branching model</li>
+			<li>dead simple</li>
+		</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-3630" data-y="-2120" data-scale="0.7" data-rotate="0">
+		<q>SVN, apart from being centralized, has a couple important characteristics:
+		<ul>
+			<li>stores changesets in deltas</li>
+			<li>poor branching / merging model</li>
+			<li>dead simple workflow</li>
+		</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-2880" data-y="-2120" data-scale="0.7" data-rotate="180">
+		<q>SVN, apart from being centralized, has a couple important characteristics:
+		<ul>
+			<li>stores changesets in deltas</li>
+			<li>poor branching / merging model</li>
+			<li>dead simple workflow</li>
+		</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-2880" data-y="-2650" data-scale="0.7" data-rotate="0">
+		<q>SVN, apart from being centralized, has a couple important characteristics:
+		<ul>
+			<li>stores changesets in deltas</li>
+			<li>poor branching / merging model</li>
+			<li>dead simple workflow</li>
+		</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-3630" data-y="-2650" data-scale="0.7" data-rotate="-180">
+		<q>SVN, apart from being centralized, has a couple important characteristics:
+		<ul>
+			<li>stores changesets in deltas</li>
+			<li>poor branching / merging model</li>
+			<li>dead simple workflow</li>
+		</ul>
+		</q>
 	</div>
 	
 	<div id="overview" class="step" data-scale="6">

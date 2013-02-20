@@ -54,6 +54,9 @@ code {
 	border: 1px solid #999;
 	background-color: #eee;
 	font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+	font-size: 50%;
+	margin: 20px 0;
+	padding: 10px;
 }
 
 table {
@@ -167,6 +170,10 @@ a:focus {
     white-space: nowrap;
 }
 
+.wideslide {
+	width: 1050px;
+}
+
 .wtf {
 	padding-top: 80px;
 	border-radius: 6px;
@@ -174,6 +181,11 @@ a:focus {
 	width: 600px;
 	height: 600px;
 	background-color: #fff;
+}
+
+#svngitmercurial {
+	font-size: 600%;
+	width: 1000px;
 }
 
 #overview { display: none }

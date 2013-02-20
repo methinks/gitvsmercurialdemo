@@ -1,0 +1,13 @@
+-	GIT stores snapshots
+	Mercurial stores revlogs (a single revlog per file with all its revision: stored as deltas and every once in a while as snapshot)
+	
+-	GIT has a commit snapshot which points to a tree; tree has entries and each points to another tree or a blob (file)
+	Mercurial stores Manifests with all the files in the tree and their version; it stores this as deltas; manifest doesn't track dirs,
+	so Mercurial cannot store an empty directory in repo
+	
+-	With revlog it is faster in Mercurial to make a diff between file revisions.
+	With whole commit objects in GIT it is much faster to checkout complete revisions and move between them
+	
+-	A different branching model:
+	GIT has lightweight branches. You can push a branch and make it track a remote branch.
+	Mercurial ecnourages branching via cloning. It has permanent named branches in a single namespace. It has bookmark feature a bit similar to lightweight branches
