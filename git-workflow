@@ -1,0 +1,16 @@
+﻿blockdiag {
+	default_fontsize = 18;
+	
+	class rev [color = orange];
+	class file [shape = roundedbox];
+	class delta [shape = roundedbox];
+	class olddelta [shape = roundedbox, style=dashed, color="#ACFAC1"];
+	
+	W [label="working copy", color = orange];
+	I [label="index", color = "#53CCF5"];
+	R [label="repository", color = "#9DEDAB"];
+	
+	W -> I [label = "stage", fontsize=12];
+	I -> R [label = "commit", fontsize=12];
+	R -> W [label = "pull", fontsize=12];
+}

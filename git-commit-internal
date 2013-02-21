@@ -1,0 +1,20 @@
+﻿blockdiag {
+	default_fontsize = 18;
+	
+	class commit [color = orange];
+	class tree [color="#ACFAC1"];
+	class blob [shape = roundedbox, color = "#53CCF5"];
+	
+	C[label="8e12b4", class="commit"];
+	
+	T1[label="tree1", class="tree"];
+	T2[label="tree2", class="tree"];
+	
+	B1[label="blob1", class="blob"];
+	B2[label="blob2", class="blob"];
+	B3[label="blob3", class="blob"];
+	
+	C -> T1 -> B1;
+	T1 -> B2;
+	T1 -> T2 -> B3;
+}

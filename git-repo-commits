@@ -1,0 +1,23 @@
+﻿blockdiag {
+	default_fontsize = 18;
+	
+	class head [color = orange];
+	class branch [color="#ACFAC1"];
+	class commit [shape = roundedbox, color = "#53CCF5"];
+	
+	R1[label="8e12b4", class="commit"];
+	R2[label="62c1ca", class="commit"];
+	R3[label="16eafd", class="commit"];
+	R4[label="b4e6fc", class="commit"];
+	
+	master[class="branch"];
+	head[class="head"];
+	
+	R1 <- R2 <- R3 <- R4 <- master <- head;
+	
+	group {
+		color = none
+		orientation = portrait
+		head, master, R4
+	}
+}
