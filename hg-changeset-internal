@@ -1,0 +1,37 @@
+﻿blockdiag {
+	default_fontsize = 18;
+	
+	class changeset [color = orange];
+	class manifest [color="#ACFAC1"];
+	class manifest_el [color="#CCCCCC"];
+	class blob [shape = roundedbox, color = "#53CCF5"];
+	
+	C[label="changeset", class="changeset"];
+	
+	M[label="manifest", class="manifest"];
+	
+	T1[label="file1", class="manifest_el"];
+	T2[label="file2", class="manifest_el"];
+	T3[label="folder/file", class="manifest_el"];
+	
+	B1[label="revlog1", class="blob"];
+	B2[label="revlog2", class="blob"];
+	B3[label="revlog3", class="blob"];
+	
+	C -> M;
+	M -> T1 [style = none];
+	T1 -> T2 [style = none];
+	T2 -> T3 [style = none];
+	
+	T1 -> B1;
+	T2 -> B2;
+	T3 -> B3;
+	
+	group {
+		shape = line;
+		style = dashed;
+		color = "#CFD0D1";
+		orientation = portrait;
+		M, T1, T2, T3
+	}
+}

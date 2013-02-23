@@ -207,6 +207,19 @@ ul.small {
 	margin-top: 140px;
 }
 
+#roundone img {
+	width: 100%;
+}
+
+#roundoneclip {
+	display:none;
+}
+
+/* hiding it for the time of transition so we won't fly through the paragraph */
+.impress-on-kindahard #gitbook, .impress-on-githasimproved #gitbook{
+	display: none;
+}
+
 #factsandmyths {
 	font-size: 800%;
 }
@@ -224,9 +237,30 @@ ul.small {
 	background-color: #fff;
 }
 
+.impress-on-wtf .step, .impress-on-wtf1 .step {
+	opacity: 0.05;
+}
+
+.impress-on-wtf .step.active, .impress-on-wtf1 .step.active {
+	opacity: 1;
+}
+
 #svngitmercurial {
 	font-size: 600%;
 	width: 1000px;
+}
+
+#commandsComparison {
+	font-size: 26px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#commandsComparison th {
+	text-align: left;
+}
+#commandsComparison p {
+	font-size: 16px;
+	margin-top: 60px;
 }
 
 #git {
@@ -240,6 +274,11 @@ ul.small {
 }
 
 #wtf1, #overview { display: none }
+
+#mercurial {
+	width: 1200px;
+	font-size: 80pt;
+}
 
 .impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf  {
     opacity: 1;
