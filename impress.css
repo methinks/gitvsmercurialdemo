@@ -160,7 +160,7 @@ ul.small {
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -1px;
-	background: url("apilia_logo.png") no-repeat 8% 7% #dedede;
+	background: url("apilia_logo.png") no-repeat 8% 7% #ededed;
 }
 
 .slide q, .imgslide q {
@@ -181,6 +181,30 @@ ul.small {
 .imgslide div {
 	text-align: center;
 	margin-top: 40px;
+}
+
+#start img {
+	width: 115%;
+}
+
+#start.past img, #start.future img{
+	display: none;
+}
+
+.impress-on-start #intro.slide, .impress-on-intro #intro.slide {
+	background-image: none;
+}
+
+.impress-on-start #start img, .impress-on-intro #start img {
+	display: inline;
+}
+
+.impress-on-intro #start {
+	opacity: 1;
+}
+
+#intro q {
+	margin-top: 140px;
 }
 
 #factsandmyths {

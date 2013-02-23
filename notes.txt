@@ -11,3 +11,5 @@
 -	A different branching model:
 	GIT has lightweight branches. You can push a branch and make it track a remote branch.
 	Mercurial ecnourages branching via cloning. It has permanent named branches in a single namespace. It has bookmark feature a bit similar to lightweight branches
+
+-	Mercurial's rev number local only...
