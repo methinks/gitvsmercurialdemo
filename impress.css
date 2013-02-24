@@ -325,11 +325,22 @@ ul.medium {
 	font-size: 180pt;
 }
 
-.impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf, .impress-on-wtf2 .wtf, .impress-on-impressjsslide .step {
+.impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf, .impress-on-wtf2 .wtf {
     opacity: 1;
     cursor: pointer;
 }
 
+/* hiding on larger scope for optimisation */
+.impress-on-overview .hideable, .impress-on-impressjsslide .slide, .impress-on-impressjsslide .imgslide, .impress-on-impressjsslide .hideable {
+	display: none;
+}
+
+#impressjsslide {
+	display: none;
+}
+#impressjsslide.active {
+	display: block;
+}
 #impressjsslide p {
 	margin-left: 30px;
 }
