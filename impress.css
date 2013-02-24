@@ -249,6 +249,7 @@ ul.medium {
 	-webkit-transform-origin: left center;
 	-moz-transform-origin: left center;
 	-ms-transform-origin: left center;
+	-o-transform-origin: left center;
 	transform-origin: left center;
 
     -webkit-transition-delay: 1.7s;
@@ -319,9 +320,30 @@ ul.medium {
 	font-size: 80pt;
 }
 
-.impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf, .impress-on-wtf2 .wtf   {
+#qna, #thanks {
+	text-align: center;
+	font-size: 180pt;
+}
+
+.impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf, .impress-on-wtf2 .wtf, .impress-on-impressjsslide .step {
     opacity: 1;
     cursor: pointer;
+}
+
+#impressjsslide p {
+	margin-left: 30px;
+}
+#madewith {
+	line-height: 0.5em;
+}
+#impressjslink {
+	font-size: 150pt;
+}
+#impressjslink a {
+	background-color: transparent;
+}
+p.kudos {
+	font-size: 18pt;
 }
 
 /* And as the last thing there is a workaround for quite strange bug. */

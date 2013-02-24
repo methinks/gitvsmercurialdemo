@@ -291,21 +291,21 @@ git commit
 		<q>Git's repo is a bunch of objects and pointers:
 			<ul class="small">
 				<li>heab and branch are pointers</li>
-				<li>commit is an object that points to it's parents</li>
+				<li>commit is an object that points to its parents</li>
 			</ul>
 		</q>
 		<img src="git-repo-commits.png" />
 	</div>
 
 	<div class="step imgslide" data-x="-4700" data-y="-500" data-scale="0.4" data-rotate="0">
-		<q>Git's commit is an object that points to it's tree. This tree itself points to other trees or blobs.
+		<q>Git's commit is an object that points to its tree. This tree itself points to other trees or blobs.
 		</q>
 		<img src="git-commit-internal.png" />
 	</div>
 	
 	<div class="step slide" data-x="-4700" data-y="-200" data-scale="0.4" data-rotate="0">
 		<q>
-			In Git a commit is identified by a SHA1 of it's contents and parent(s). Therefore it is immutable.
+			In Git a commit is identified by a SHA1 of its contents and parent(s). Therefore it is immutable.
 		</q>
 		<q>
 			The same applies to all Git's objects. This makes up for great consistency!
@@ -424,8 +424,54 @@ git commit
 	<div id="dvcsincorpo" class="step" data-x="1800" data-y="-600" data-scale="1.8" data-rotate="90">
 		DVCS in corporation
 	</div>
+	
+	<div class="step slide" data-x="2100" data-y="-1400" data-scale="0.4" data-rotate="90">
+		<q>
+			Corporations need not fret the "distributed".
+			<ul>
+				<li>centralizing a DCVS repo is a common practice</li>
+				<li>coworkers can still exchange work before it is ready for central repo</li>
+			</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="2100" data-y="-1000" data-scale="0.4" data-rotate="90">
+		<q>
+			<ul class="medium">
+				<li>Git and Mercurial are blazing fast</li>
+				<li>Additional repo backup "for free"</li>
+				<li>Easy <strong>branching</strong> and <strong>merging</strong> - a blessing in a rapid environment (hotfixing, shifting releases, retrofitting)</li>
+				<li>Git's <strong>cherrypick</strong> (Mercurial's <strong>transplant extension</strong>) wonderful in a hotifx environment!</li>
+			</ul> 
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="2100" data-y="-600" data-scale="0.4" data-rotate="90">
+		<q>
+			Employees get extra productive when tools do not delay them. Local repo copy:
+			<ul>
+				<li>Almost instant diffs</li>
+				<li>Fast annotate (blame) / bisect</li>
+				<li>Frustration free branching experience</li>
+			</ul>
+		</q>
+	</div>
+	
+	<div id="qna" class="step" data-x="600" data-y="1000" data-scale="2">
+		<p>Q & A</p>
+	</div>
+	
+	<div id="thanks" class="step" data-x="700" data-y="2300" data-scale="2">
+		<p>Thanks!</p>
+	</div>
 
 	<div id="overview" class="step" data-x="-1500" data-y="-500" data-scale="8">
+	</div>
+	
+	<div id="impressjsslide" class="step" data-x="1500" data-y="8000" data-scale="50">
+		<p id="madewith">Made with <div id="impressjslink"><a href="https://github.com/bartaz/impress.js">impress.js!</a></div></p>
+		<p class="kudos">Kudos to <a href="http://bartaz.github.com/">bartaz (Bartek Szopka)</a> for creating it!</p>
+		<p class="kudos">Based heavily on impress.js demo</a>
 	</div>
 </div>
 
