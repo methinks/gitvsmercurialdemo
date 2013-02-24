@@ -104,7 +104,12 @@ a:focus {
 
 ul.small {
 	font-size: 70%;
-	line-height: 1.1em;
+	line-height: 1.2em;
+}
+
+ul.medium {
+	font-size: 90%;
+	line-height: 1.4em;
 }
 
 /* presentation steps */
@@ -221,7 +226,36 @@ ul.small {
 }
 
 #factsandmyths {
-	font-size: 800%;
+	width: 1200px;
+	font-size: 100pt;
+}
+
+#factsandmyths span {
+    display: inline-block;
+    -webkit-transition: 0.6s;
+    -moz-transition:    0.6s;
+    -ms-transition:     0.6s;
+    -o-transition:      0.6s;
+    transition:         0.6s;
+}
+
+#factsandmyths.present .rotate {
+    -webkit-transform: rotate(15deg) translateY(10px) translateX(10px);
+    -moz-transform:    rotate(15deg) translateY(10px) translateX(10px);
+    -ms-transform:     rotate(15deg) translateY(10px) translateX(10px);
+    -o-transform:      rotate(15deg) translateY(10px) translateX(10px);
+    transform:         rotate(15deg) translateY(10px) translateX(10px);
+	
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+
+    -webkit-transition-delay: 1.7s;
+    -moz-transition-delay:    1.7s;
+    -ms-transition-delay:     1.7s;
+    -o-transition-delay:      1.7s;
+    transition-delay:         1.7s;
 }
 
 .wideslide {
@@ -237,11 +271,11 @@ ul.small {
 	background-color: #fff;
 }
 
-.impress-on-wtf .step, .impress-on-wtf1 .step {
+.impress-on-wtf .step, .impress-on-wtf1 .step, .impress-on-wtf2 .step {
 	opacity: 0.05;
 }
 
-.impress-on-wtf .step.active, .impress-on-wtf1 .step.active {
+.impress-on-wtf .step.active, .impress-on-wtf1 .step.active, .impress-on-wtf2 .step.active {
 	opacity: 1;
 }
 
@@ -273,14 +307,19 @@ ul.small {
 	width: 800px;
 }
 
-#wtf1, #overview { display: none }
+#wtf1, #wtf2, #overview { display: none }
 
 #mercurial {
 	width: 1200px;
 	font-size: 80pt;
 }
 
-.impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf  {
+#dvcsincorpo {
+	width: 1200px;
+	font-size: 80pt;
+}
+
+.impress-on-overview .step, .impress-on-start .step, .impress-on-wtf1 .wtf, .impress-on-wtf2 .wtf   {
     opacity: 1;
     cursor: pointer;
 }

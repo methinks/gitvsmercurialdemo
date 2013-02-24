@@ -34,7 +34,7 @@
 		</q>
 	</div>
 	
-	<div id="roundone" class="step" data-x="-1000" data-y="-2250">
+	<div id="roundone" class="step" data-x="-2000" data-y="-2500" data-rotate-x="55" data-scale="0.5">
         <img src="mk.png" 	/>
     </div>
 	
@@ -42,8 +42,8 @@
 		<source src="roundonefight.mp3" type="audio/mp3" />
 	</audio>
 
-	<div id="factsandmyths" class="step wideslide" data-x="-1500" data-y="-1500" data-rotate="90" data-scale="0.1">
-        <q>Facts and myths.</q>
+	<div id="factsandmyths" class="step" data-x="-450" data-y="-2500" data-rotate="0" data-scale="1.8">
+        <q>Facts and <span class="rotate">myths.</span></q>
     </div>
 	
     <div class="step slide" data-x="-1000" data-y="-1500">
@@ -261,9 +261,14 @@ git commit
 		<td><strong>hg move/rename</strong></td>
 		<td>git mv</td>
 		</tr>
+		<tr>
+		<td>?</td>
+		<td>hg backout</td>
+		<td>git revert</td>
+		</tr>
 		</tbody>
 		</table>
-		<p>Source: <a href="http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/">http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/</a></p>
+		<p>Source: <a href="http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/">http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/</a> + edits</p>
 	</div>
 	
 	<div id="git" class="step" data-x="-4500" data-y="-1750" data-scale="2" data-rotate="90">
@@ -320,7 +325,7 @@ git commit
 
 	<div class="step slide" data-x="-4300" data-y="100" data-scale="0.4" data-rotate="0">
 		<q>
-			Git's command line is messy. To drop a branch / stash / remote branch you do:
+			Git's command line <strong>is</strong> messy. To drop a branch / stash / remote branch you do:
 			<ul>
 				<li>git branch -d &lt;branch name&gt;</li>
 				<li>git stash drop &lt;stash name&gt;</li>
@@ -354,13 +359,73 @@ git commit
 			<li>flat manifest file</li>
 			<li>manifest entry points to a revision in revlog</li>
 			<li>revlog stores all file's revision</li>
-			<li>revlog's index shows revisions length and offset</li>
+			<li>revlog's index shows revision's length and offset</li>
 		</ul>
 		</q>
 		<img src="hg-changeset-internal.png" />
 	</div>
+	
+	<div class="step slide" data-x="-1560" data-y="1600" data-scale="0.4" data-rotate="180">
+		<q>
+			In Mercurial each file is stored in a single revlog file (+index file).<br/>
+			Building file revision - log(1):
+			<ul>
+				<li>finding a revision info in index</li>
+				<li>reading length and offset in revlog</li>
+				<li>adding up a few deltas</li>
+			</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-1970" data-y="1600" data-scale="0.4" data-rotate="180">
+		<q>
+			- A changeset and revlog entry is identified by a SHA-1 string (called nodeid).
+			Revlogs are append only.
+			<br/>
+			- Basic history edition - hg rollback undoes last operation (i.e. commit or pull).
+			This cannot be undone...
+			<br/>
+			- hg commit --amend since mid-2012
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-1970" data-y="1270" data-scale="0.4" data-rotate="180">
+		<q>
+			Apart from global SHA-1 nodeid, each changeset has a sequential local revision id.
+			This does <strong>not</strong> propagate cross-repo and can be different for each user...
+		</q>
+	</div>
+	
+	<div id="wtf2" class="step" data-x="-1510" data-y="-140" data-rotate="90" data-scale="3.2">
+	</div>
+	
+	<div class="step slide" data-x="-1560" data-y="1270" data-scale="0.4" data-rotate="180">
+		<q>
+			MQ plugin: index and "history edit":
+			<ul class="medium">
+				<li>adds index-like feature</li>
+				<li>many queues support for storing patches</li>
+				<li>allows for patches versioning</li>
+				<li>until patch in queue is commited you can edit, rearrange etc.</li>
+			</ul>
+		</q>
+	</div>
+	
+	<div class="step slide" data-x="-1150" data-y="1270" data-scale="0.4" data-rotate="180">
+		<q>
+			<ul>
+				<li>commands have less switches - clearer doc</li>
+				<li>tutorials sub-par comparing to the free git-book</li>
+				<li>documetnation and tutorials for plugins / extensions has low quality</li>
+			</ul>
+		</q>
+	</div>
+	
+	<div id="dvcsincorpo" class="step" data-x="1800" data-y="-600" data-scale="1.8" data-rotate="90">
+		DVCS in corporation
+	</div>
 
-	<div id="overview" class="step" data-scale="6">
+	<div id="overview" class="step" data-x="-1500" data-y="-500" data-scale="8">
 	</div>
 </div>
 
