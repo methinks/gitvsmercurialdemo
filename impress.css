@@ -273,13 +273,27 @@ ul.medium {
 }
 
 .impress-on-wtf .step, .impress-on-wtf1 .step, .impress-on-wtf2 .step {
-	opacity: 0.05;
+	opacity: 0;
 }
 
 .impress-on-wtf .step.active, .impress-on-wtf1 .step.active, .impress-on-wtf2 .step.active {
 	opacity: 1;
 }
-
+/* optimising wtf slides */
+.impress-on-wtf .hideable, .impress-on-wtf1 .hideable, .impress-on-wtf2 .hideable {
+	display: none;
+}
+.impress-on-coolMerge .svn, .impress-on-coolMerge .git, .impress-on-coolMerge .hideable, .impress-on-wtf .svn, .impress-on-wtf .git, .impress-on-gitPull .intro, .impress-on-gitPull .factsmyths, .impress-on-gitPull .hideable  {
+	display: none;
+}
+/* optimising wtf1 slides */
+.impress-on-wtf1 .svn, .impress-on-wtf1 .intro, .impress-on-gitCli .intro, .impress-on-gitCli .hideable, .impress-on-gitCli .factsmyths, .impress-on-mercurial .intro, .impress-on-mercurial .factsmyths, .impress-on-mercurial .svn {
+	display: none;
+}
+/* optimising wtf2 slides */
+.impress-on-localRevId .hideable, .impress-on-localRevId .intro, .impress-on-localRevId .factsmyths, .impress-on-localRevId .git, .impress-on-localRevId .svn,
+.impress-on-wtf2 .hideable, .impress-on-wtf2 .intro, .impress-on-wtf2 .factsmyths, .impress-on-wtf2 .git, .impress-on-wtf2 .svn,
+.impress-on-mqExt .hideable, .impress-on-mqExt .intro, .impress-on-mqExt .factsmyths, .impress-on-mqExt .git, .impress-on-mqExt .svn
 #svngitmercurial {
 	font-size: 600%;
 	width: 1000px;
@@ -315,11 +329,16 @@ ul.medium {
 	font-size: 80pt;
 }
 
+.impress-on-mercurialPros .git, .impress-on-mercurialPros .svn, .impress-on-mercurialPros .hideable {
+	display: none;
+}
 #dvcsincorpo {
 	width: 1200px;
 	font-size: 80pt;
 }
-
+.impress-on-dvcsincorpo .git, .impress-on-dvcsincorpo .svn, .impress-on-dvcsincorpo .hideable {
+	display: none;
+}
 #qna, #thanks {
 	text-align: center;
 	font-size: 180pt;

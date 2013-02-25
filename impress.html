@@ -19,11 +19,11 @@
 
 <body>
 <div id="impress" data-transition-duration="900">
-	<div id="start" class="step" data-x="-2330" data-y="-1772" data-z="1" data-scale="0.19">
+	<div id="start" class="step intro" data-x="-2330" data-y="-1772" data-z="1" data-scale="0.19">
 		<img src="apilia_large_logo.png" />
 	</div>
 	
-	<div id="intro" class="step slide" data-x="-2000" data-y="-1500">
+	<div id="intro" class="step slide intro" data-x="-2000" data-y="-1500">
 		<q>Adam Parchimowicz
 			<ul>
 				<li>developer for > 7 years</li>
@@ -42,16 +42,16 @@
 		<source src="roundonefight.mp3" type="audio/mp3" />
 	</audio>
 
-	<div id="factsandmyths" class="step" data-x="-450" data-y="-2500" data-rotate="0" data-scale="1.8">
+	<div id="factsandmyths" class="step factsmyths" data-x="-450" data-y="-2500" data-rotate="0" data-scale="1.8">
         <q>Facts and <span class="rotate">myths.</span></q>
     </div>
 	
-    <div class="step slide" data-x="-1000" data-y="-1500">
+    <div class="step slide factsmyths" data-x="-1000" data-y="-1500">
         <q><b>Git / Mercurial</b> -  two rival DVCS out there since <b>2005</b>.</q>
 		<q>In almost 8 years some <b>facts</b> are already <b>myths</b>.</q>
     </div>
 
-    <div class="step slide" data-x="0" data-y="-1500">
+    <div class="step slide factsmyths" data-x="0" data-y="-1500">
         <q><i>"Git's CLI sucks!"</i> say Mercurial's power users.
 		<ul>
 			<li>hard to learn</li>
@@ -62,7 +62,7 @@
 		</q>
     </div>
 
-    <div id="githasimproved" class="step slide" data-x="0" data-y="-750" data-scale="1">
+    <div id="githasimproved" class="step slide factsmyths" data-x="0" data-y="-750" data-scale="1">
         <q>Git has improved a lot since its early days.
 		<ul>
 			<li>fantastic well written free book</li>
@@ -72,22 +72,22 @@
 		</ul>
 		</q>
     </div>
-	<div id="kindahard" class="step hideable" data-x="-330" data-y="-500" data-scale="0.15">
+	<div id="kindahard" class="step hideable factsmyths" data-x="-330" data-y="-500" data-scale="0.15">
 		<ul>
 			<li>* still kinda hard to master**</li>
 		</ul>
 	</div>
-	<div id="trueninja" class="step hideable" data-x="-330" data-y="-300" data-z="500" data-scale="0.15" data-rotate-x="-30">
+	<div id="trueninja" class="step hideable factsmyths" data-x="-330" data-y="-300" data-z="500" data-scale="0.15" data-rotate-x="-30">
 		<ul>
 			<li>** ok, very hard to become a true ninja</li>
 		</ul>
 	</div>
 
-	<div id="gitbook" class="step hideable" data-x="-330" data-y="-500" data-z="500" data-scale="0.15" data-rotate-x="-30">
+	<div id="gitbook" class="step hideable factsmyths" data-x="-330" data-y="-500" data-z="500" data-scale="0.15" data-rotate-x="-30">
 		<p>Though free Scott Chacon's book (<a href="http://git-scm.com/book">available for free online</a>) is the only thing you need to really learn most of the Git power features. And it is not that long - a free weekend is all that separates you from becoming a Git poweruser.</p>
 	</div>
 	
-	<div class="step slide" data-x="1000" data-y="-1500">
+	<div class="step slide factsmyths" data-x="1000" data-y="-1500">
         <q><i>"Mercurial doesn't give you the power!"</i> say Git's power users.
 		<ul>
 			<li>history is (too) sacred</li>
@@ -98,7 +98,7 @@
 		</q>
     </div>
 	
-	<div class="step slide" data-x="1000" data-y="-750">
+	<div class="step slide factsmyths" data-x="1000" data-y="-750">
         <q>In reality, Mercurial has tons of plugins and disabled features.
 		<ul>
 			<li>MQ gives you index (and more)*</li>
@@ -109,7 +109,7 @@
 		</q>
     </div>
 	
-	<div class="step hideable" data-x="670" data-y="-490" data-scale="0.15">
+	<div class="step hideable factsmyths" data-x="670" data-y="-490" data-scale="0.15">
 		<ul>
 			<li>* there are so many plugins it is hard to grasp it</li>
 			<li>* not out of the box? what about support?</li>
@@ -117,11 +117,11 @@
 		</ul>
 	</div>
 	
-	<div class="step slide" data-x="1000" data-y="0">
+	<div class="step slide factsmyths" data-x="1000" data-y="0">
 		<q>Mercurial <strong>does</strong> have its vices, and <strong>so does</strong> Git.</q>
 	</div>
 	
-	<div class="step wideslide data-x="-100" data-y="0">
+	<div id="coolMerge" class="step wideslide data-x="-100" data-y="0">
 		<p><a href="http://osdir.com/ml/version-control.git/2005-06/msg00792.html">Coolest merge ever</a> (according to Linus):</p>
 <pre><code>
 git fetch <project-to-union-merge>
@@ -138,16 +138,16 @@ git commit
 		<img src="wtf.jpeg" width="520px" height="*"/>
 	</div>
 	
-	<div class="step slide" data-x="-3250" data-y="290" data-scale="1.5" data-rotate="180">
+	<div id="gitPull" class="step slide" data-x="-3250" data-y="290" data-scale="1.5" data-rotate="180">
 		<q><strong>git pull &lt;other repo url&gt;</strong> is all you need right now.</q>
 		<q>The post was from 2005 - very early days</q>
 	</div>
 	
-	<div id="svngitmercurial" class="step" data-x="-3300" data-y="-500" data-scale="1.5" data-rotate="180">
+	<div id="svngitmercurial" class="step svn" data-x="-3300" data-y="-500" data-scale="1.5" data-rotate="180">
 		<p>SVN / Git / Mercurial</p>
 	</div>
 	
-	<div class="step slide" data-x="-3250" data-y="-1325" data-scale="1.5" data-rotate="180">
+	<div class="step slide svn" data-x="-3250" data-y="-1325" data-scale="1.5" data-rotate="180">
 		<q>SVN, apart from being centralized, has a couple important characteristics:
 		<ul>
 			<li>stores changesets in deltas</li>
@@ -157,17 +157,17 @@ git commit
 		</q>
 	</div>
 	
-	<div class="step imgslide" data-x="-3630" data-y="-2120" data-scale="0.7" data-rotate="0">
+	<div class="step imgslide svn" data-x="-3630" data-y="-2120" data-scale="0.7" data-rotate="0">
 		<q>Rough representation of SVN and Mercurial storage model</q>
 		<div><img src="svn-deltas.png" /></div>
 	</div>
 	
-	<div class="step imgslide" data-x="-2880" data-y="-2120" data-scale="0.7" data-rotate="0">
+	<div class="step imgslide svn" data-x="-2880" data-y="-2120" data-scale="0.7" data-rotate="0">
 		<q>Rough representation of Git storage model</q>
 		<div><img src="git-repo-model.png" /></div>
 	</div>
 	
-	<div class="step slide" data-x="-2880" data-y="-2650" data-scale="0.7" data-rotate="180">
+	<div class="step slide svn" data-x="-2880" data-y="-2650" data-scale="0.7" data-rotate="180">
 		<q>Branching model.
 		<ul>
 			<li>In SVN branch is just a folder copy</li>
@@ -177,12 +177,12 @@ git commit
 		</q>
 	</div>
 	
-	<div class="step slide" data-x="-3630" data-y="-2650" data-scale="0.7" data-rotate="0">
+	<div class="step slide svn" data-x="-3630" data-y="-2650" data-scale="0.7" data-rotate="0">
 		<q>Merging changes between branches - ever tried this in SVN?</q>
 		<q>Branch merging in SVN is a nightmare. In <strong>Git</strong> and <strong>Mercurial</strong> it just works!</q>
 	</div>
 	
-	<div id="commandsComparison" class="step hideable" data-x="-3630" data-y="-3180" data-scale="0.7" data-rotate="0">
+	<div id="commandsComparison" class="step hideable svn" data-x="-3630" data-y="-3180" data-scale="0.7" data-rotate="0">
 		<table style="width: 900px;">
 		<tbody>
 		<tr style="border-bottom: 1px solid black;">
@@ -271,23 +271,23 @@ git commit
 		<p>Source: <a href="http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/">http://blogs.atlassian.com/2012/02/mercurial-vs-git-why-mercurial/</a> + edits</p>
 	</div>
 	
-	<div id="git" class="step" data-x="-4500" data-y="-1750" data-scale="2" data-rotate="90">
+	<div id="git" class="step git" data-x="-4500" data-y="-1750" data-scale="2" data-rotate="90">
 		Git - strengths and weaknesses
 	</div>
 	
-	<div id="gitindex" class="step imgslide" data-x="-4700" data-y="-800" data-scale="0.4" data-rotate="0">
+	<div id="gitindex" class="step imgslide git" data-x="-4700" data-y="-800" data-scale="0.4" data-rotate="0">
 		<q>Git introduces a concept of an index (or staging area). It is an extra step, but helps with crafting a commit.</q>
 		<div><img src="git-workflow.png" /></div>
 	</div>
 
-	<div class="step slide" data-x="-4300" data-y="-800" data-scale="0.4" data-rotate="0">
+	<div class="step slide git" data-x="-4300" data-y="-800" data-scale="0.4" data-rotate="0">
 		<q>
 			Git offers ultra-fast branching. Branch is just a pointer to a commit.
 		</q>
 		<q>Creating a branch == writing 41 bytes to a file (40 chars + newline).</q>
 	</div>
 	
-	<div class="step imgslide" data-x="-4300" data-y="-500" data-scale="0.4" data-rotate="0">
+	<div class="step imgslide git" data-x="-4300" data-y="-500" data-scale="0.4" data-rotate="0">
 		<q>Git's repo is a bunch of objects and pointers:
 			<ul class="small">
 				<li>heab and branch are pointers</li>
@@ -297,13 +297,13 @@ git commit
 		<img src="git-repo-commits.png" />
 	</div>
 
-	<div class="step imgslide" data-x="-4700" data-y="-500" data-scale="0.4" data-rotate="0">
+	<div class="step imgslide git" data-x="-4700" data-y="-500" data-scale="0.4" data-rotate="0">
 		<q>Git's commit is an object that points to its tree. This tree itself points to other trees or blobs.
 		</q>
 		<img src="git-commit-internal.png" />
 	</div>
 	
-	<div class="step slide" data-x="-4700" data-y="-200" data-scale="0.4" data-rotate="0">
+	<div class="step slide git" data-x="-4700" data-y="-200" data-scale="0.4" data-rotate="0">
 		<q>
 			In Git a commit is identified by a SHA1 of its contents and parent(s). Therefore it is immutable.
 		</q>
@@ -312,7 +312,7 @@ git commit
 		</q>
 	</div>
 	
-	<div class="step slide" data-x="-4300" data-y="-200" data-scale="0.4" data-rotate="0">
+	<div class="step slide git" data-x="-4300" data-y="-200" data-scale="0.4" data-rotate="0">
 		<q>
 			Rewriting history: Git can do it.
 			<ul>
@@ -323,7 +323,7 @@ git commit
 		</q>
 	</div>
 
-	<div class="step slide" data-x="-4300" data-y="100" data-scale="0.4" data-rotate="0">
+	<div id="gitCli" class="step slide git" data-x="-4300" data-y="100" data-scale="0.4" data-rotate="0">
 		<q>
 			Git's command line <strong>is</strong> messy. To drop a branch / stash / remote branch you do:
 			<ul>
@@ -337,11 +337,11 @@ git commit
 	<div id="wtf1" class="step" data-x="-1510" data-y="-140" data-rotate="90" data-scale="3.2">
 	</div>
 	
-	<div id="mercurial" class="step" data-x="-1550" data-y="2100" data-scale="1.8" data-rotate="180">
+	<div id="mercurial" class="step mercurial" data-x="-1550" data-y="2100" data-scale="1.8" data-rotate="180">
 		Mercurial - strengths and weaknesses
 	</div>
 	
-	<div class="step imgslide" data-x="-740" data-y="1600" data-scale="0.4" data-rotate="180">
+	<div class="step imgslide mercurial" data-x="-740" data-y="1600" data-scale="0.4" data-rotate="180">
 		<q>
 			Key differences in commits structure:
 			<ul class="small">
@@ -353,7 +353,7 @@ git commit
 		<img src="hg-repo-commits.png" />
 	</div>
 	
-	<div class="step imgslide" data-x="-1150" data-y="1600" data-scale="0.4" data-rotate="180">
+	<div class="step imgslide mercurial" data-x="-1150" data-y="1600" data-scale="0.4" data-rotate="180">
 		<q>
 		<ul class="small">
 			<li>flat manifest file</li>
@@ -365,7 +365,7 @@ git commit
 		<img src="hg-changeset-internal.png" />
 	</div>
 	
-	<div class="step slide" data-x="-1560" data-y="1600" data-scale="0.4" data-rotate="180">
+	<div class="step slide mercurial" data-x="-1560" data-y="1600" data-scale="0.4" data-rotate="180">
 		<q>
 			In Mercurial each file is stored in a single revlog file (+index file).<br/>
 			Building file revision - log(1):
@@ -377,7 +377,7 @@ git commit
 		</q>
 	</div>
 	
-	<div class="step slide" data-x="-1970" data-y="1600" data-scale="0.4" data-rotate="180">
+	<div class="step slide mercurial" data-x="-1970" data-y="1600" data-scale="0.4" data-rotate="180">
 		<q>
 			- A changeset and revlog entry is identified by a SHA-1 string (called nodeid).
 			Revlogs are append only.
@@ -389,7 +389,7 @@ git commit
 		</q>
 	</div>
 	
-	<div class="step slide" data-x="-1970" data-y="1270" data-scale="0.4" data-rotate="180">
+	<div id="localRevId" class="step slide mercurial" data-x="-1970" data-y="1270" data-scale="0.4" data-rotate="180">
 		<q>
 			Apart from global SHA-1 nodeid, each changeset has a sequential local revision id.
 			This does <strong>not</strong> propagate cross-repo and can be different for each user...
@@ -399,9 +399,9 @@ git commit
 	<div id="wtf2" class="step" data-x="-1510" data-y="-140" data-rotate="90" data-scale="3.2">
 	</div>
 	
-	<div class="step slide" data-x="-1560" data-y="1270" data-scale="0.4" data-rotate="180">
+	<div id="mqExt" class="step slide mercurial" data-x="-1560" data-y="1270" data-scale="0.4" data-rotate="180">
 		<q>
-			MQ plugin: index and "history edit":
+			MQ extension: index and "history edit":
 			<ul class="medium">
 				<li>adds index-like feature</li>
 				<li>many queues support for storing patches</li>
@@ -411,7 +411,7 @@ git commit
 		</q>
 	</div>
 	
-	<div class="step slide" data-x="-1150" data-y="1270" data-scale="0.4" data-rotate="180">
+	<div id="mercurialPros" class="step slide mercurial" data-x="-1150" data-y="1270" data-scale="0.4" data-rotate="180">
 		<q>
 			<ul>
 				<li>commands have less switches - clearer doc</li>
