@@ -38,8 +38,11 @@
         <img src="mk.png" 	/>
     </div>
 	
-	<audio id="roundoneclip">
+	<audio id="roundoneclip" class="audioclip">
 		<source src="roundonefight.mp3" type="audio/mp3" />
+	</audio>
+	<audio id="fatalityclip">
+		<source src="fatality.mp3" type="audio/mp3" />
 	</audio>
 
 	<div id="factsandmyths" class="step factsmyths" data-x="-450" data-y="-2500" data-rotate="0" data-scale="1.8">
@@ -180,6 +183,11 @@ git commit
 	<div class="step slide svn" data-x="-3630" data-y="-2650" data-scale="0.7" data-rotate="0">
 		<q>Merging changes between branches - ever tried this in SVN?</q>
 		<q>Branch merging in SVN is a nightmare. In <strong>Git</strong> and <strong>Mercurial</strong> it just works!</q>
+	</div>
+	
+	<div id="fatality" class="step" data-x="-3630" data-y="-2650" data-z="800" data-rotate-x="30" data-scale="0.7">
+		<img src="fatality.png" />
+		<p>SVN vs Git / Mercurial</p>
 	</div>
 	
 	<div id="commandsComparison" class="step hideable svn" data-x="-3630" data-y="-3180" data-scale="0.7" data-rotate="0">
@@ -480,6 +488,11 @@ git commit
 	
 	$('#roundone').get(0).addEventListener('impress:stepenter', function() {
 		$('#roundoneclip').get(0).play();
+	});
+	$('#fatality').get(0).addEventListener('impress:stepenter', function() {
+		setTimeout(function() {
+			$('#fatalityclip').get(0).play();
+		}, 2400);
 	});
 </script>
 </body>

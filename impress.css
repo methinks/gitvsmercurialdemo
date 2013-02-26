@@ -216,7 +216,7 @@ ul.medium {
 	width: 100%;
 }
 
-#roundoneclip {
+.audioclip {
 	display:none;
 }
 
@@ -297,6 +297,64 @@ ul.medium {
 #svngitmercurial {
 	font-size: 600%;
 	width: 1000px;
+}
+#fatality {
+	display: none;
+	text-align: center;
+	font-size: 60pt;
+	width: 1000px;
+}
+.impress-on-fatality #fatality{
+	display: block;
+
+}
+#fatality img {
+	position: relative;
+	top: -600px;
+	width: 100%;
+}
+
+#fatality.present img {
+	-webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+	
+	-webkit-transform: translateY(700px);
+    -moz-transform:    translateY(700px);
+    -ms-transform:     translateY(700px);
+    -o-transform:      translateY(700px);
+    transform:         translateY(700px);
+	
+	-webkit-transition-delay: 2s;
+    -moz-transition-delay:    2s;
+    -ms-transition-delay:     2s;
+    -o-transition-delay:      2s;
+    transition-delay:         2s;
+}
+#fatality p {
+	position: relative;
+	top: -200px;
+}
+#fatality.present p {
+	-webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;
+	
+	-webkit-transform: translateY(600px);
+    -moz-transform:    translateY(600px);
+    -ms-transform:     translateY(600px);
+    -o-transform:      translateY(600px);
+    transform:         translateY(600px);
+	
+	-webkit-transition-delay: 2.2s;
+    -moz-transition-delay:    2.2s;
+    -ms-transition-delay:     2.2s;
+    -o-transition-delay:      2.2s;
+    transition-delay:         2.2s;
 }
 
 #commandsComparison {
