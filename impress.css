@@ -187,9 +187,11 @@ ul.medium {
 	text-align: center;
 	margin-top: 40px;
 }
-
+#start {
+	width: 1280px;
+}
 #start img {
-	width: 115%;
+	width: 100%;
 }
 
 #start.past img, #start.future img{
@@ -272,6 +274,13 @@ ul.medium {
 	background-color: #fff;
 }
 
+.wtf p {
+	text-align: right;
+	font-size: 150%;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: -18px;
+}
+
 .impress-on-wtf .step, .impress-on-wtf1 .step, .impress-on-wtf2 .step {
 	opacity: 0;
 }
@@ -293,10 +302,12 @@ ul.medium {
 /* optimising wtf2 slides */
 .impress-on-localRevId .hideable, .impress-on-localRevId .intro, .impress-on-localRevId .factsmyths, .impress-on-localRevId .git, .impress-on-localRevId .svn,
 .impress-on-wtf2 .hideable, .impress-on-wtf2 .intro, .impress-on-wtf2 .factsmyths, .impress-on-wtf2 .git, .impress-on-wtf2 .svn,
-.impress-on-mqExt .hideable, .impress-on-mqExt .intro, .impress-on-mqExt .factsmyths, .impress-on-mqExt .git, .impress-on-mqExt .svn
+.impress-on-mqExt .hideable, .impress-on-mqExt .intro, .impress-on-mqExt .factsmyths, .impress-on-mqExt .git, .impress-on-mqExt .svn {
+	display: none;
+}
 #svngitmercurial {
-	font-size: 600%;
-	width: 1000px;
+	width: 1300px;
+	font-size: 90pt;
 }
 #fatality {
 	display: none;
