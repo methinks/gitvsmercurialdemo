@@ -1,5 +1,5 @@
 ﻿blockdiag {
-	default_fontsize = 18;
+	default_fontsize = 22;
 	
 	class rev [color = orange];
 	class file [shape = roundedbox];

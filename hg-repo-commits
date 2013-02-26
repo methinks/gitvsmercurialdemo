@@ -1,5 +1,5 @@
 ﻿blockdiag {
-	default_fontsize = 18;
+	default_fontsize = 22;
 	
 	class head [color = orange];
 	class commit [shape = roundedbox, color = "#53CCF5"];
